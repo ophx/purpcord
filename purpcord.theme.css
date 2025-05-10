@@ -1,0 +1,197 @@
+/**
+ * @name Purpcord
+ * @version 1.0.0
+ * @description A purple theme
+ * @author ophx
+ *
+ * @invite j2JT8QYQyf
+ */
+
+
+
+
+/* helpers i guess lol */
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/icons.css");
+
+
+
+
+
+/*
+*
+* Main
+*
+*/
+
+/* global */
+:root {
+    --accent-hue: 265;
+	--accent-saturation: 71%;
+	--accent-lightness: 61%;
+    --accent-hsl: var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness);
+    --accent-text-color: hsl(0, 0%, 100%);
+
+    --brand-500: hsl(var(--accent-hsl)) !important;
+    --brand-560: hsl(var(--accent-hsl), 0.5) !important;
+    --brand-600: hsl(var(--accent-hsl), 0.5) !important;
+    --blurple-35: hsl(var(--accent-hsl)) !important;
+    
+    --opacity-blurple-16: hsl(var(--accent-hsl), 0.2) !important;
+
+    --text-brand: hsl(var(--accent-hsl)) !important;
+    --text-link: hsl(var(--accent-hsl)) !important;
+
+    --mention-background: hsl(var(--accent-hsl), 0.2) !important;
+    --mention-foreground: hsl(var(--accent-hsl)) !important;
+}
+
+/* loader */
+.content_a2f514 {
+    display: flex;
+    flex-direction: column;
+    > .spinner_a2f514 { display: none }
+    &:before {
+        display: block;
+        height: 128px;
+        position: relative;
+        content: url(https://cdn3.emoji.gg/emojis/3959-hmm.png);
+        image-rendering: pixelated;
+        align-content: center;
+        margin-bottom: 35px;
+    }
+}
+
+/* top bar */
+.visual-refresh .bar_c38106 {
+    padding-left: 0;
+    padding-right: var(--spacing-4);
+}
+.visual-refresh .bar_c38106 .leading_c38106 {
+    padding-left: var(--spacing-8);
+}
+.visual-refresh .bar_c38106 .title__85643 {
+    line-height: var(--custom-app-top-bar-height);
+    padding: 0 10px;
+}
+.visual-refresh .bar_c38106 .title__85643 .guildIcon__85643,
+.visual-refresh .bar_c38106 .title__85643 .text-sm\/medium_cf4812,
+.visual-refresh .bar_c38106 .title__85643 svg {
+    display: none;
+}
+.visual-refresh .bar_c38106 .title__85643:before, .visual-refresh .bar_c38106 .title__85643:after {
+    font-size: 0.925em;
+    color: var(--text-normal);
+}
+.visual-refresh .bar_c38106 .title__85643:before {
+    content: "Purpcord";
+}
+.visual-refresh .bar_c38106 .title__85643:after {
+    content: "[v1.0.0]";
+}
+
+/* home button */
+.wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8 {
+    background: hsl(var(--accent-hsl));
+}
+
+/* unread badge */
+.numberBadge__2b1f5 {
+    background: hsl(var(--accent-hsl)) !important;
+}
+
+/* badge */
+.textBadge__2b1f5 {
+    background: hsl(var(--accent-hsl)) !important;
+    color: #fff;
+}
+
+/* guild badges */
+.flowerStar__3e3b0 path {
+    fill: hsl(var(--accent-hsl));
+}
+.childContainer__3e3b0 path {
+    fill: var(--accent-text-color);
+}
+
+/* user area */
+.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: var(--custom-guild-list-width);
+    bottom: 0px;
+    border-radius: 0px;
+    border: none;
+}
+.visual-refresh nav[class*=guilds_] {
+    margin-bottom: unset;
+}
+
+/* checkmark */
+.checked__87bf1 {
+    background: hsl(var(--accent-hsl)) !important;
+}
+.checked__87bf1 path {
+    fill: hsl(var(--accent-hsl)) !important;
+}
+
+
+
+
+
+/*
+*
+* DM Sidebar
+*
+*/
+
+/* user selected & tabs */
+:where(.visual-refresh) .interactive__972a0:active, :where(.visual-refresh) .interactiveSelected__972a0 {
+    background: hsl(var(--accent-hsl), 0.5) !important;
+}
+:where(.visual-refresh) .interactive__972a0:active, :where(.visual-refresh) .interactiveSelected__972a0:hover {
+    background: hsl(var(--accent-hsl), 0.5) !important;
+}
+
+
+
+
+
+/*
+*
+* Channels Sidebar
+*
+*/
+
+/* channel selected/hovered */
+.modeSelected__2ea32 .link__2ea32,.modeSelected__2ea32:hover .link__2ea32 {
+    background: hsl(var(--accent-hsl), 0.5);
+}
+
+
+
+
+
+/*
+*
+* Profiles
+*
+*/
+
+/* app tag */
+.botTag__82f07.botTagRegular__82f07 {
+  background-color: hsl(var(--accent-hsl));
+}
+
+
+
+
+
+/*
+*
+* Markdown
+*
+*/
+
+/* links */
+.markup__75297 a {
+    color: hsl(var(--accent-hsl));
+}
