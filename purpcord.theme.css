@@ -31,6 +31,7 @@
     --accent-hsl: var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness);
     --accent-text-color: hsl(0, 0%, 100%);
 
+    --bg-brand: hsl(var(--accent-hsl)) !important;
     --brand-360: hsl(var(--accent-hsl)) !important;
     --brand-500: hsl(var(--accent-hsl)) !important;
     --brand-560: hsl(var(--accent-hsl), 0.5) !important;
@@ -79,6 +80,14 @@
     background: hsl(var(--accent-hsl));
 }
 
+/* other server list buttons */
+.circleIconButton__5bc7e.selected__5bc7e {
+    background: hsl(var(--accent-hsl));
+}
+.circleIconButton__5bc7e:hover {
+    background: hsl(var(--accent-hsl)) !important;
+}
+
 /* unread badge */
 .numberBadge__2b1f5 {
     background: hsl(var(--accent-hsl)) !important;
@@ -124,15 +133,25 @@
 
 /*
 *
+* Settings Sidebar
+*
+*/
+
+/* selected/hovered */
+.visual-refresh .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026, .visual-refresh .topPill_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
+    background: hsl(var(--accent-hsl), 0.5) !important;
+}
+
+
+
+/*
+*
 * DM Sidebar
 *
 */
 
 /* user selected & tabs */
-:where(.visual-refresh) .interactive__972a0:active, :where(.visual-refresh) .interactiveSelected__972a0 {
-    background: hsl(var(--accent-hsl), 0.5) !important;
-}
-:where(.visual-refresh) .interactive__972a0:active, :where(.visual-refresh) .interactiveSelected__972a0:hover {
+.visual-refresh .interactiveSelected__972a0 {
     background: hsl(var(--accent-hsl), 0.5) !important;
 }
 
@@ -157,13 +176,26 @@
 
 /*
 *
+* Discovery Sidebar
+*
+*/
+
+/* selected/hovered */
+.navItem__551b0.selected__551b0, .navItem__551b0:active {
+    background-color: hsl(var(--accent-hsl), 0.5) !important;
+}
+
+
+
+/*
+*
 * Profiles
 *
 */
 
 /* app tag */
 .botTag__82f07.botTagRegular__82f07 {
-  background-color: hsl(var(--accent-hsl));
+    background-color: hsl(var(--accent-hsl));
 }
 
 
