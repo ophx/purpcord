@@ -40,39 +40,14 @@
     
     --opacity-blurple-16: hsl(var(--accent-hsl), 0.2) !important;
 
+    --control-background-primary-default: hsl(var(--accent-hsl)) !important;
+    --control-background-primary-hover: hsl(var(--accent-hsl), 0.5) !important;
+
     --text-brand: hsl(var(--accent-hsl)) !important;
     --text-link: hsl(var(--accent-hsl)) !important;
 
     --mention-background: hsl(var(--accent-hsl), 0.2) !important;
     --mention-foreground: hsl(var(--accent-hsl)) !important;
-}
-
-/* top bar */
-.visual-refresh .bar_c38106 {
-    padding-left: 0;
-    padding-right: var(--spacing-4);
-}
-.visual-refresh .bar_c38106 .leading_c38106 {
-    padding-left: var(--spacing-8);
-}
-.visual-refresh .bar_c38106 .title__85643 {
-    line-height: var(--custom-app-top-bar-height);
-    padding: 0 10px;
-}
-.visual-refresh .bar_c38106 .title__85643 .guildIcon__85643,
-.visual-refresh .bar_c38106 .title__85643 .text-sm\/medium_cf4812,
-.visual-refresh .bar_c38106 .title__85643 svg {
-    display: none;
-}
-.visual-refresh .bar_c38106 .title__85643:before, .visual-refresh .bar_c38106 .title__85643:after {
-    font-size: 0.925em;
-    color: var(--text-normal);
-}
-.visual-refresh .bar_c38106 .title__85643:before {
-    content: "Purpcord";
-}
-.visual-refresh .bar_c38106 .title__85643:after {
-    content: "[v1.0.1]";
 }
 
 /* home button */
